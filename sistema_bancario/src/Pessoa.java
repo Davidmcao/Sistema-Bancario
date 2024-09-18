@@ -3,11 +3,12 @@ abstract class Pessoa {
     protected int idade;
     protected String nome, cpf;
 
-    public Pessoa(String nome, String cpf, int idade){
-     this.nome = nome;
-     this.idade = idade;
-     this.cpf = cpf;
+    public Pessoa(String nome, String cpf, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = cpf;
     }
+
     public int getIdade() {
         return idade;
     }

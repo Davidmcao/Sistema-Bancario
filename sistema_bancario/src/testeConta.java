@@ -1,14 +1,24 @@
+import java.util.Scanner;
+
 public class testeConta {
     public static void main(String[] args) {
-        
-        Conta conta = new Conta("David", "86546532565", 20, 32456, 1420.50);
+        Scanner ler = new Scanner(System.in);
 
-        conta.exibirDadosConta();
+        System.out.println("Digite o nome do titular: ");
+        String nome = ler.nextLine();
 
-        conta.depositar();
+        Conta conta = new Conta(nome, "", 0, 0, 0);
 
-        conta.sacar();
-        
-        conta.exibirDadosConta();
+        conta.Conta(); 
+
+        conta.exibirDadosConta(); 
+
+        conta.depositar(); 
+
+        conta.sacar(); 
+
+        conta.transferencia();
+
+        conta.exibirDadosConta(); 
     }
 }
