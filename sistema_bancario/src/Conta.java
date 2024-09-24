@@ -22,13 +22,16 @@ public class Conta extends Pessoa {
             return;
         }
 
-        System.out.println("Informe seu CPF: ");
-        this.cpf = ler.next();
-        if (cpf.length() != 11 || !cpf.matches("\\d{11}")) {
-            System.out.println("CPF inválido.");
-            return;
-        } else {
-            System.out.println("CPF válido.");
+        boolean cpfValido = false;
+        while (!cpfValido) {
+            System.out.println("Informe seu CPF: ");
+            this.cpf = ler.next();
+            if (cpf.length() != 11 || !cpf.matches("\\d{11}")) {
+                System.out.println("CPF inválido. Tente novamente.");
+            } else {
+                System.out.println("CPF válido.");
+                cpfValido = true; 
+            }
         }
 
         System.out.println("Informe o número da conta: ");

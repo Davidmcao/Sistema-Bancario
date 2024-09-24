@@ -37,7 +37,7 @@ No terminal, digite os comandos a seguir:
 $ git clone https://github.com/Davidmcao/Sistema-Bancario.git
 
 # Vá para o ropositório
-$ cd exercicios-java
+$ cd Sistema-Bancario
 
 
 ---
