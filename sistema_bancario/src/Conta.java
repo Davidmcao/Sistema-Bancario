@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Conta extends Pessoa {
     private int numConta;
-    private double saldo, saldoAtual, valorSaque, valorTransferencia;
+    private double saldo, saldoAtual, valorSaque, valorTransf;
     private String deposito, saque, transferencia;
 
     public Conta(String nome, String cpf, int idade, int numConta, double saldo) {
@@ -23,7 +23,7 @@ public class Conta extends Pessoa {
         }
 
         boolean cpfValido = false;
-        while (!cpfValido) {
+        while (cpfValido) {
             System.out.println("Informe seu CPF: ");
             this.cpf = ler.next();
             if (cpf.length() != 11 || !cpf.matches("\\d{11}")) {
@@ -88,11 +88,11 @@ public class Conta extends Pessoa {
 
         if (transferencia.equalsIgnoreCase("Sim")) {
             System.out.println("Informe o valor da transferência: R$ ");
-            valorTransferencia = ler.nextDouble();
+            valorTransf = ler.nextDouble();
 
-            if (valorTransferencia <= saldoAtual) {
-                saldoAtual -= valorTransferencia;
-                System.out.println("Transferência de R$ " + valorTransferencia + " realizada com sucesso.");
+            if (valorTransf <= saldoAtual) {
+                saldoAtual -= valorTransf;
+                System.out.println("Transferência de R$ " + valorTransf + " realizada com sucesso.");
                 System.out.println("Saldo atual: R$ " + saldoAtual);
             } else {
                 System.out.println("Saldo insuficiente.");
