@@ -23,10 +23,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Esse repositório foi criado com um intuito de acompanhar meu progresso nos estudos da linguagem Java, aonde faço a criação de um sistema bancário para ser rodado no terminal.
 Neste código é possivel realizar abertura de conta, deposito, saque e transferência bancária.
+Neste projeto utilizei para poder praticar os conceitos de POO(Programação Orientada a Objeto).
 
 ## ⚠ Como usar
 
 Para copiar e executar essas aplicaçãos, você precisa de três pré-requisitos: [Git](https://git-scm.com), [Visual Studio Code](https://code.visualstudio.com/download) + [Java in visual studio code](https://code.visualstudio.com/docs/languages/java) intalados no seu computador.
+
+Dentro do projeto você consegue cadastrar a conta dele com um valor inicial e realizar processos de deposito, saque e transferência, mas para isso irei te mostrar abaixo como você irá fazer para poder baixar o projeto.
 
 No terminal, digite os comandos a seguir:
 
